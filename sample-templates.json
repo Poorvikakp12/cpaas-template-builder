@@ -1,0 +1,106 @@
+{
+  "sample_payment_reminder": {
+    "name": "payment_reminder",
+    "language": "en",
+    "category": "UTILITY",
+    "components": [
+      {
+        "type": "HEADER",
+        "format": "TEXT",
+        "text": "Payment Reminder for {{1}}"
+      },
+      {
+        "type": "BODY",
+        "text": "Hi {{1}},\n\nYour payment of ${{2}} for {{3}} is due on {{4}}.\n\nPlease pay to avoid late fees."
+      },
+      {
+        "type": "FOOTER",
+        "text": "Ignore if already paid"
+      },
+      {
+        "type": "BUTTONS",
+        "buttons": [
+          {
+            "type": "URL",
+            "text": "Pay Now",
+            "url": "https://example.com/pay"
+          },
+          {
+            "type": "PHONE_NUMBER",
+            "text": "Call Support",
+            "phone_number": "+1234567890"
+          }
+        ]
+      }
+    ]
+  },
+  "sample_appointment_confirmation": {
+    "name": "appointment_confirmation",
+    "language": "en",
+    "category": "UTILITY",
+    "components": [
+      {
+        "type": "HEADER",
+        "format": "TEXT",
+        "text": "Appointment Confirmed"
+      },
+      {
+        "type": "BODY",
+        "text": "Hello {{1}},\n\nYour appointment with {{2}} is confirmed for {{3}} at {{4}}.\n\nLocation: {{5}}"
+      },
+      {
+        "type": "BUTTONS",
+        "buttons": [
+          {
+            "type": "QUICK_REPLY",
+            "text": "Confirm"
+          },
+          {
+            "type": "QUICK_REPLY",
+            "text": "Reschedule"
+          },
+          {
+            "type": "PHONE_NUMBER",
+            "text": "Call Us",
+            "phone_number": "+1234567890"
+          }
+        ]
+      }
+    ]
+  },
+  "promotional_offer": {
+    "name": "promotional_offer",
+    "language": "en",
+    "category": "MARKETING",
+    "components": [
+      {
+        "type": "HEADER",
+        "format": "TEXT",
+        "text": "Special Offer Just for You!"
+      },
+      {
+        "type": "BODY",
+        "text": "Hi {{1}},\n\nGet {{2}}% off your next purchase! Use the code below at checkout.\n\nOffer valid until {{3}}."
+      },
+      {
+        "type": "FOOTER",
+        "text": "Terms and conditions apply"
+      },
+      {
+        "type": "BUTTONS",
+        "buttons": [
+          {
+            "type": "COPY_CODE",
+            "text": "Copy Offer Code",
+            "example": "SAVE20"
+          },
+          {
+            "type": "URL",
+            "text": "Shop Now",
+            "url": "https://example.com/shop"
+          }
+        ]
+      }
+    ]
+  }
+}
